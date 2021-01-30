@@ -8,7 +8,7 @@ int main() {
 
     //This is the audio file that plays when the timer is up
     sf::Music music;
-    if (!music.openFromFile("../files/sound.wav"))
+    if (!music.openFromFile("./files/sound.wav"))
         //TODO this error triggers due to a permission error but it works anyway :/?  
         std::cout << "This error sometimes triggers due to a harmless permission error?!.. If it triggers for another reason well your fucked I guess :D";
 
