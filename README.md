@@ -5,3 +5,10 @@ compiling and running
 
     g++ ./src/main.cpp -lsfml-audio
     ./a.out
+
+dependencies
+
+arch
+
+    sudo pacman -S sfml
+    
