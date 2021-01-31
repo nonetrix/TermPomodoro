@@ -5,14 +5,14 @@
 //This sleeps for time_wait then plays sound
 void play_sound_after(int time_wait, sf::Music& sound)
 {
-	std::cout << "Started timer" << std::endl;
-	sleep(time_wait);
-	sound.play();
+    std::cout << "Started timer" << std::endl;
+    sleep(time_wait);
+    sound.play();
     std::cin.clear();
     std::cin.ignore ( 1024, '\n' );
     std::cout << "Time up!\n";
     sleep(3);
-	sound.stop();
+    sound.stop();
 }
 
 int main() {
@@ -33,11 +33,11 @@ int main() {
         std::cout << "\x1B[2J\x1B[H";
 
         //Asks the user what they would like to do
-		std::cout << "How long would you want to take a break for or work for?" << std::endl << std::endl;
+        std::cout << "How long would you want to take a break for or work for?" << std::endl << std::endl;
 
-		std::cout << "1. Work for 25 mins"         << std::endl;
-		std::cout << "2. Take a break for 5 mins"  << std::endl;
-		std::cout << "3. Take a break for 10 mins" << std::endl << std::endl;
+        std::cout << "1. Work for 25 mins"         << std::endl;
+        std::cout << "2. Take a break for 5 mins"  << std::endl;
+        std::cout << "3. Take a break for 10 mins" << std::endl << std::endl;
 
         std::cout << ":";
         std::cin >> input;
@@ -47,7 +47,6 @@ int main() {
         {
             std::cout << "Taking a break for 10 mins" << std::endl;
             play_sound_after(600, sound);
-
         } 
         
         else if (input == 2) 
