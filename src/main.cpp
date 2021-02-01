@@ -45,22 +45,21 @@ int main() {
         //Checks the Input starting with 3 since we all know you are lazy
         if(input == 3) 
         {
-            std::cout << "\nTaking a break for 10 mins\n";
+            std::cout << "Taking a break for 10 mins" << std::endl;
             play_sound_after(600, sound);
 
         } 
         
         else if (input == 2) 
         {
-            std::cout << "\nTaking a break for 5 mins\n";
-            //play_sound_after(1, sound); <-- this is for testing
+            std::cout << "Taking a break for 5 mins" << std::endl;
+            //play_sound_after(1, sound); <-- This is for testing
             play_sound_after(300, sound);
-            
         } 
         
         else if (input == 1) 
         {
-            std::cout << "\nWorking for 25 mins\n";
+            std::cout << "Working for 25 mins" << std::endl;
             play_sound_after(1500, sound);
         }
         
@@ -68,7 +67,7 @@ int main() {
         {
             std::cin.clear();
             std::cin.ignore ( 1024, '\n' );
-            std::cout << "Invaild input!\n";
+            std::cout << "Invaild input!" << std::endl;
             sleep(1);
         }
     }
