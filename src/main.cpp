@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include <SFML/Audio.hpp>
 
+//This sleeps for time_wait then plays sound
 void play_sound_after(int time_wait, sf::Music& sound)
 {
 	std::cout << "Started timer" << std::endl;
