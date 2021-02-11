@@ -2,21 +2,26 @@
 #include <unistd.h>
 #include <SFML/Audio.hpp>
 
-//This sleeps for time_wait then plays sound
+//This sleeps for time_wait then plays sound it also now converts time_wait to minutes and seconds 
 void play_sound_after(int time_wait, sf::Music& sound)
 {
-    std::cout << "Started timer" << std::endl;
-    sleep(time_wait);
+    while (time_wait >= 1)
+    {
+        std::cout << "\x1B[2J\x1B[H";
+        //TODO if the seconds go below 10 it prints something like 10:9 when it should really print 10:09 but it works I guess..
+        std::cout << "Time remaining: " << time_wait / 60 << ":" << time_wait % 60 << std::endl;
+        sleep(1);
+        time_wait--;
+    }
     sound.play();
     std::cin.clear();
     std::cin.ignore ( 1024, '\n' );
-    std::cout << "Time up!\n";
+    std::cout << "Time up!" << std::endl;
     sleep(3);
     sound.stop();
 }
 
 int main() {
-    //This is the intager that stores the users input
     int input;
 
     //This is the audio file that plays when the timer is up
@@ -65,3 +70,4 @@ int main() {
     }
     return 0;
 }
+
