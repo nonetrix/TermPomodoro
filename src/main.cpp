@@ -29,7 +29,7 @@ int main() {
     if (!sound.openFromFile("./files/sound.wav")) 
     {
         std::cout << "Could not load audio file";
-        return -1;
+        return(-1);
     }
 
     while(1) 
@@ -42,7 +42,8 @@ int main() {
 
         std::cout << "1. Work for 25 mins"         << std::endl;
         std::cout << "2. Take a break for 5 mins"  << std::endl;
-        std::cout << "3. Take a break for 10 mins" << std::endl << std::endl;
+        std::cout << "3. Take a break for 10 mins" << std::endl;
+        std::cout << "4. quit" << std::endl << std::endl;
 
         std::cout << ":";
         std::cin >> input;
@@ -60,6 +61,9 @@ int main() {
                 std::cout << "Working for 25 mins" << std::endl;
                 play_sound_after(1500, sound);
                 break;
+            case 4:
+                return(0);
+                break;
             default:
                 std::cin.clear();
                 std::cin.ignore ( 1024, '\n' );
@@ -68,6 +72,5 @@ int main() {
                 break;
         }
     }
-    return 0;
+    return(0);
 }
-
