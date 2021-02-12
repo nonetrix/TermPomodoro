@@ -12,6 +12,8 @@ void play_sound_after(int time_wait, sf::Music& sound)
         std::cout << "\x1B[2J\x1B[H";
 
         time_sec = time_wait % 60;
+        
+        //prints a extra 0 if seconds is equal to something like 9
         if (time_sec <= 9) 
         {
             std::cout << "Time remaining: " << time_wait / 60 << ":" << "0" << time_sec << std::endl;
