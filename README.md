@@ -8,6 +8,7 @@ compiling and running
     
 compiling and running 3Ds
 
+    find out how to install devkitpro on your distro 
     cd 3DS
     make
 
