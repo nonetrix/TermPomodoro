@@ -5,7 +5,7 @@ You know it's good software the code is more make file than actual code
 
 compiling and running
 
-    g++ ./src/main.cpp -Ofast -lsfml-audio
+    g++ ./src/main.cpp -O3 -lsfml-audio
     ./a.out
     
 compiling and running 3Ds why did I make a 3Ds port again?! What the fuck was I on?
