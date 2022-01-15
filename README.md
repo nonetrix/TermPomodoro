@@ -1,5 +1,5 @@
 # TermPomodoro
-Simple terminal pomodoro implementation in C++ now with a 3Ds port because why not lol
+Simple terminal pomodoro implementation in C++ 
 
 You know it's good software the code is more make file than actual code
 
@@ -8,7 +8,7 @@ compiling and running
     g++ ./src/main.cpp -Ofast -lsfml-audio
     ./a.out
     
-compiling and running 3Ds
+compiling and running 3Ds why did I make a 3Ds port again?! What the fuck was I on?
 
     find out how to install devkitpro on your distro 
     cd 3DS
