@@ -1,6 +1,8 @@
 # TermPomodoro
 Simple terminal pomodoro implementation in C++ now with a 3Ds port because why not lol
 
+You know it's good software the code is more make file than actual code
+
 compiling and running
 
     g++ ./src/main.cpp -Ofast -lsfml-audio
